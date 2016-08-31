@@ -1,0 +1,12 @@
+<%= simple_form_for @message do |f| %>
+  <%= f.input :title, label: "Message Title" %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+
+<div class= "field">
+   <%= f.label :image %><br>
+   <%= f.file_field :image %>
+</div>
+<% end %>
+
+
